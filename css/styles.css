@@ -22,10 +22,12 @@
   --secondary-btn-bgc: #F4F4FD;
   --secondary-btn-text-hover-color: #FFFFFF;
   --secondary-btn-bgc-hover: #404BBF;
+  --secondary-btn-border: #E7E9FC;
   /* footer */
   --secondary-logo-text-color: #F4F4FD;
   --footer-text-color: #E7E9FC;
 }
+
 
 body {
   color: var(--primery-text-color);
@@ -34,6 +36,28 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container{
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+  margin: 0 auto;
+}
+
+.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section.features{
+  padding-bottom: 0;
 }
 
 /* Header */
@@ -98,11 +122,20 @@ body {
 
 
 /* Hero */
+.section.hero{
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .hero {
-  background-color: var(--hero-bgc)
+  background-color: var(--hero-bgc);
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+
   color: var(--hero-text-color);
   font-family: 'Roboto', sans-serif;
 
@@ -126,6 +159,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -136,12 +172,15 @@ body {
 .secondary.button {
   color: var(--secondary-btn-text-color);
   background-color: var(--secondary-btn-bgc);
+  padding: 16px 24px;
+  border: 1px solid var(--secondary-btn-border);
 }
 
 .secondary.button:hover,
 .secondary.button:focus {
   color: var(--secondary-btn-text-hover-color);
   background-color: var(--secondary-btn-bgc-hover);
+  border-color: transparent;
 }
 
 
@@ -156,6 +195,9 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
 .title {
@@ -166,12 +208,23 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  margin-top: 0;
+  margin-bottom: 8px;
 }
+
+/* section Team */
+.section.team .title{
+  margin-top: 32px;
+}
+
 
 /* Footer */
 
 .footer {
-  background-color: var(--footer-bgc)
+  background-color: var(--footer-bgc);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -187,6 +240,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+
+  margin-bottom: 16px;
+
+
 }
 
 .footer-text {
@@ -197,6 +254,8 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Portfolio */
