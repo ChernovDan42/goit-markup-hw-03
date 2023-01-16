@@ -221,6 +221,8 @@ p{
   padding: 16px 32px;
   text-align: center;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
 }
 
 .button:hover,
@@ -368,6 +370,7 @@ p{
 /* Portfolio */
 
 .portfolio-link {
+  
   text-decoration: none;
   
   color: var(--primery-text-color);
