@@ -18,30 +18,36 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav container">
-        <a href="/" class="logo"><span class="web">Web</span>Studio</a>
-        <ul class="list site-nav">
-          <li><a href="./index.html" class="link active">Studio</a></li>
-          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-        </ul>
-      </nav>
+    <header class="page-header">
+      <div class="page-header container">
+        <nav class="nav">
+          <a href="/" class="logo"><span class="web">Web</span>Studio</a>
+          <ul class="list site-nav">
+            <li class="nav-link">
+              <a href="./index.html" class="link active">Studio</a>
+            </li>
+            <li class="nav-link">
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li class="nav-link"><a href="" class="link">Contacts</a></li>
+          </ul>
+        </nav>
 
-      <address class="container">
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link address"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="link address"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+        <address class="address">
+          <ul class="address list">
+            <li class="address-item">
+              <a href="mailto:info@devstudio.com" class="link address"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a href="tel:+110001111111" class="link address"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <!-- Hero -->
@@ -54,29 +60,29 @@
     <section class="section features">
       <div class="container">
         <h2 hidden class="section-title">Features</h2>
-        <ul class="list">
-          <li>
+        <ul class="list features">
+          <li class="features-item">
             <h3 class="title">Strategy</h3>
             <p>
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3 class="title">Punctuality</h3>
             <p>
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3 class="title">Diligence</h3>
             <p>
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3 class="title">Technologies</h3>
             <p>
               Design practice focused on digital experiences. We bring forth a
@@ -90,17 +96,23 @@
     <!-- What are we doing -->
 
     <section class="section about">
-      <div class="container">
+      <div class="container about">
         <h2 class="section-title">What are we doing</h2>
-        <ul class="list">
+        <ul class="list about">
           <li>
-            <img src="./Image/rectangle-71.jpeg" alt="leptop app" width="360" />
+            <img
+              src="./Image/rectangle-71.jpeg"
+              alt="leptop app"
+              width="360"
+              class="image-about"
+            />
           </li>
           <li>
             <img
               src="./Image/rectangle-72.jpeg"
               alt="mobile chat"
               width="360"
+              class="image-about"
             />
           </li>
           <li>
@@ -108,6 +120,7 @@
               src="./Image/rectangle-73.jpeg"
               alt="recomendet for you"
               width="360"
+              class="image-about"
             />
           </li>
         </ul>
@@ -118,27 +131,49 @@
     <section class="section team">
       <div class="container">
         <h2 class="section-title">Our Team</h2>
-        <ul class="list">
-          <li>
-            <img src="./Image/mark-guerrero.jpeg" alt="Emploer" width="264" />
-            <h3 class="title">Mark Guerrero</h3>
-            <p>Product Designer</p>
+        <ul class="list team">
+          <li class="team-card">
+            <img
+              src="./Image/mark-guerrero.jpeg"
+              alt="Emploer"
+              width="264"
+              class="image"
+            />
+            <h3 class="title teamtext">Mark Guerrero</h3>
+            <p class="teamtext p">Product Designer</p>
           </li>
-          <li>
-            <img src="./Image/tom-ford.jpeg" alt="Emploer" width="264" />
-            <h3 class="title">Tom Ford</h3>
-            <p>Frontend Developer</p>
+          <li class="team-card">
+            <img
+              src="./Image/tom-ford.jpeg"
+              al
+              t="Emploer"
+              width="264"
+              class="image"
+            />
+
+            <h3 class="title teamtext">Tom Ford</h3>
+            <p class="teamtext p">Frontend Developer</p>
           </li>
 
-          <li>
-            <img src="./Image/camila-garcia.jpeg" alt="Emploer" width="264" />
-            <h3 class="title">Camila Garcia</h3>
-            <p>Marketing</p>
+          <li class="team-card">
+            <img
+              src="./Image/camila-garcia.jpeg"
+              alt="Emploer"
+              width="264"
+              class="image"
+            />
+            <h3 class="title teamtext">Camila Garcia</h3>
+            <p class="teamtext p">Marketing</p>
           </li>
-          <li>
-            <img src="./Image/daniel-wilson.jpeg" alt="Emploer" width="264" />
-            <h3 class="title">Daniel Wilson</h3>
-            <p>UI Designer</p>
+          <li class="team-card">
+            <img
+              src="./Image/daniel-wilson.jpeg"
+              alt="Emploer"
+              width="264"
+              class="image"
+            />
+            <h3 class="title teamtext">Daniel Wilson</h3>
+            <p class="teamtext p">UI Designer</p>
           </li>
         </ul>
       </div>
