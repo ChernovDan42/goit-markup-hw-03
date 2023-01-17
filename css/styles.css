@@ -66,7 +66,7 @@ p{
 }
 
 /* Header */
-.page-header{
+.header{
   border-bottom: 1px solid var(--border-header-color)
 }
 
@@ -201,7 +201,7 @@ p{
   font-size: 56px;
   line-height: 1.1;
 
-  text-align: center;
+  
   letter-spacing: 0.02em;
   
 }
@@ -373,6 +373,7 @@ p{
   
   text-decoration: none;
   
+  
   color: var(--primery-text-color);
 }
 
@@ -395,19 +396,27 @@ margin-right: 24px;
   flex-wrap: wrap;
   
 }
+.image-portfolio{
+  margin-bottom: 0;
+  display: block;
+}
+
+.portfolio-div{
+  border: 1px solid var(--border-portfolio-color);
+  border-top: 0;
+  padding-top: 32px;
+}
 
 .portfolio-item{
   width: 360px;
-  margin-bottom: 48px;
-  border: 1px solid var(--border-portfolio-color)
 }
 
 .portfolio-item:not(:nth-child(3n)){
   margin-right: 24px;
 }
 
-.portfolio-item:nth-last-child(-n+3){
-  margin-bottom: 0;
+.portfolio-item:not(:nth-last-child(-n+3)){
+  margin-bottom: 48px;
 }
 
 .title.portfolio,
